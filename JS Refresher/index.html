@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict";
+        
+        // let a = 34;
+        // let a = 45;
+        // const a = 45;
+        // a = 4554+4;
+        // console.log(a);
+
+        // Datatypes
+        // Numbers
+        // Objects
+        // Booleans 
+        // String
+        // undefined
+        // null 
+
+        function hello ()
+        {
+            console.log("Hi Irfan! Have a good day");
+        }
+
+        let obj = {
+            r: 35,
+            m: 64,
+            func: function myfun(number) {
+                console.log("The number is " + number);
+            }
+        }
+
+        document.addEventListener("click", function click(){
+            console.log("Clicked");
+            // alert("Hello");
+            let conf = confirm("Are you sure?");
+            console.log(conf);
+        })
+
+        let arr = [21, 42, 44];
+        console.log(this);
+        //function myfunc(number){
+        //  console.log("The number is" + this);
+        // }
+        let mobj={
+            a: this,
+         myfunc : (number) {
+        console.log("The number is" + this);
+        }
+    }
+        mobj.myfunc();
+        console.log(mobj.a);
+        setTimeout(()=>{
+            console.log("yayyy")
+        }, 3000);
+        console.log("mai neechay wali secret ho");
+    </script>
+</head>
+<body>
+    <h1> I am Learning JS </h1>
+</body>
+
+</html>
